@@ -42,7 +42,7 @@ export default function Header({ placeholder }) {
     key: "selection",
   };
   return (
-    <header className="z-50 top-0 sticky grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
+    <header className="z-50 top-0 sticky grid grid-cols-2 md:grid-cols-3 bg-white shadow-md p-5 md:px-10">
       {/* logo */}
       <Link href="/">
         <div
@@ -61,11 +61,11 @@ export default function Header({ placeholder }) {
       </Link>
 
       {/* search */}
-      <div className="flex items-center md:border-2 rounded-full ">
+      <div className="hidden md:flex items-center md:border-2 rounded-full ">
         <input
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-          className="flex-grow bg-transparent pl-5 outline-none"
+          className="flex-grow bg-transparent pl-5 outline-none text-sm"
           type="text"
           placeholder={placeholder}
         />

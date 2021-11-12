@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function LargeCard({ img, title, description, buttonText }) {
   return (
     <div className="relative py-16 ">
-      <div className="relative cursor-pointer h-96 min-w-[300px]">
+      <div className="relative cursor-pointer h-96 min-w-[275px]">
         <Image
           src={img}
           layout="fill"

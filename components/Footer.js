@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 px-32 py-14 bg-gray-200 text-gray-600">
+    <div className="grid grid-cols-1 pl-10 gap-y-10  py-14 bg-gray-200 text-gray-600 md:px-32 md:grid-cols-3">
       <div className="space-y-4 text-xs text-gray-800">
         <h5 className="font-bold">ABOUT</h5>
         <p>How Airbnb Works</p>
